@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emojis</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h1 class= "btn-danger titulo">Que gesto haces
+   <br>
+   😁 👍 🤨 👌
+</h1>
+<kbd>Toma una foto y ve que gesto haces</kbd>
+<br>
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+    <div id="camara"></div>
+    <br>
+    <button class="btn btn-danger" onclick="tomarFoto()">Tomar foto</button>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+    <h3 id="resultado1">Primer emoji</h3><span id="emoji1">😁</span>
+    <h3 id="resultado2">segundo emoji</h3><span id="emoji2">😁</span>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+    <div id="captura"></div>
+    <br>
+    <button class="btn btn-danger" onclick="analizarEmoji()">Reconocer emoji</button>
+</div>
+<script src="main.js"></script>
+</body>
+
+</html>
